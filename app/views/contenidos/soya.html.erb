@@ -1,0 +1,67 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Productos", contenidos_productos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <ul>
+      <li>Superficie sembrada en México, año agrícola 2012</li>
+      <ul>
+        <li>144 mil has.</li>
+        <li>0.9% de la superficie total sembrada.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Producción, año agrícola 2012</li>
+      <ul>
+        <li>247 mil ton.</li>
+        <li>Promedio anual 2008-2012: 179 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Importaciones, 2012</li>
+      <ul>
+        <li>121 mil ton. equivalente al 40% de la producción nacional.</li>
+        <li>Promedio anual 2008–2012: 374 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Importaciones vía Puerto Progreso, Yucatán, 2012</li>
+      <ul>
+        <li>121 mil ton. el 100% del total de las importaciones.</li>
+        <li>Promedio anual 2008–2012: 321 mil ton, representando  el 86% de las importaciones totales.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL ha desarrollado conjuntamente con instituciones públicas, programas de investigación para incrementar la producción de semilla de soya que pueda ser utilizada como un cultivo sustentable en el Sureste del país.</li>
+    </ul>
+    <br>
+    <p>Fuentes: SIAP, SIAVI y Administración Portuaria de Puerto Progreso, Yucatán.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "soya1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "soya2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "soya3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "soya4.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Productos", contenidos_productos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <ul>
+      <li>Superficie sembrada en México, año agrícola 2012</li>
+      <ul>
+        <li>65 mil has.</li>
+        <li>0.5% de la superficie total sembrada.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Producción, año agrícola 2012</li>
+      <ul>
+        <li>42 mil ton.</li>
+        <li>Promedio anual 2008-2012: 37 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Importaciones, 2012</li>
+      <ul>
+        <li>16 mil ton. equivalente al 39% de la producción  nacional.</li>
+        <li>Promedio anual 2008–2012: 18 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL, ha realizado evaluaciones de producción diferentes variedades de ajonjolí, identificando su potencial de producción en la región como cultivo sustentable en el Sureste del país.</li>
+    </ul>
+    <br>
+    <p>Fuentes: SIAP, SIAVI y Administración Portuaria de Puerto Progreso, Yucatán.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "ajonjoli1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "ajonjoli2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Products", english_products_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <ul>
+      <li>Planting in Mexico, 2012:</li>
+       <ul>
+        <li>1.7 million hectares.</li>
+        <li>10.9% of the total surface.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Production, 2012:</li>
+      <ul>
+        <li>1.1 million tons.</li>
+        <li>Annual average 2008-2012: 991 thousand tons.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>There is a high market preference for different types of black beans, in the Southern region of Mexico. An estimated 67% of domestic black bean consumption takes place in this region.</li>
+    </ul>
+    <ul>
+      <li>Production of black beans:</li>
+      <ul>
+        <li>Annual Average 2007-2011: 370 thousand tons; 33% of all the varieties of beans.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Imports of black beans, 2012:</li>
+      <ul>
+        <li>97 thousand tons.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL has concentrated its efforts in the production of different varieties of black beans, obtaining yields close to 2.0 ton/ha in transformed soils.</li>
+    </ul>
+    <br>
+    <p>Sources: SIAP, SIAVI and Port Authority of Puerto Progreso Yucatan.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "frijol1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "frijol2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "frijol3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

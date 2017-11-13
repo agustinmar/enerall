@@ -1,0 +1,118 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Productos", contenidos_productos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-5">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <p>Aceite versátil de alta calidad, extraído del grano de higuerilla. El aceite crudo, posteriormente es pasado por un proceso de filtración y clarificación para lograr las especificaciones de aceite de ricino “First Special Grade” (FSG), también conocido como grado número 1. Es un aceite con un tono amarillo pálido, transparente, y viscoso; con un olor similar a otros aceites vegetales.</p>
+    <p>Los sectores en donde el aceite de ricino tiene función son:</p>
+    <ul>
+      <li>Resinas y polioles</li>
+      <li>Lubricantes</li>
+      <li>Jabones</li>
+      <li>Cosméticos</li>
+      <li>Biocombustibles</li>
+    </ul><br><br>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "ricino1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "ricino2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "ricino3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <br><br><br>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr class="success">
+            <th class="text-center txtcaption">ESPECIFICACIONES</th>
+            <th class="text-center txtcaption">VALOR</th>
+            <th class="text-center txtcaption">UNIDAD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="warning">
+            <td class="txtcaption">Valor de Acetilo</td>
+            <td class="txtcaption">140 Min.</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Valor de Ácido</td>
+            <td class="txtcaption">2% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Color</td>
+            <td class="txtcaption">20 Amarillo, 2 Rojo Max.</td>
+            <td class="txtcaption">Escala Lovibond 5 1/4"</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Ácidos Grasos Libres</td>
+            <td class="txtcaption">1% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Índice de Hidroxilo</td>
+            <td class="txtcaption">160 - 168</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Impurezas Insolubles</td>
+            <td class="txtcaption">0.02 Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Valor de Yodo</td>
+            <td class="txtcaption">82 - 90</td>
+            <td class="txtcaption">cg Yodo/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Humedad y Volatilidad</td>
+            <td class="txtcaption">0.25% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Índice de Refracción</td>
+            <td class="txtcaption">1.477 - 1.481</td>
+            <td class="txtcaption">@ 40°C</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Densidad Relativa</td>
+            <td class="txtcaption">0.958 - 0.969</td>
+            <td class="txtcaption">@ 30°C</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Ácido Ricinoléico</td>
+            <td class="txtcaption">85% Min.</td>
+            <td class="txtcaption">%</td>
+           </tr>
+          <tr class="warning">
+            <td class="txtcaption">Valor de Saponificación</td>
+            <td class="txtcaption">177 - 187</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Materia Insaponificable</td>
+            <td class="txtcaption">1% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

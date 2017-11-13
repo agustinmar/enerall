@@ -1,0 +1,55 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="container text-justify text-success">
+  <h1 class="h1-ener"><%= @title %></h1>
+  <p>Enerall has concentrated its efforts on the production and sales of grains and oilseeds. A strategic crop for our business is castor, source of castor oil; vegetable oil that has more than 700 registered uses in various industries worldwide.</p>
+  <p>Enerall is committed to achieve maximum quality in its products in a sustainable way. We are proud to contribute in the development of Mexican farmland, as well as supply food and vegetable oils to the national and international markets.</p>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("maiz6.jpg"), english_corn_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Corn</h3></div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("sorgo6.jpg"), english_sorghum_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Sorghum</h3></div>
+      </div>
+    </div>
+    <!--<div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("higuerilla2.jpg"), english_castor_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Castor</h3></div>
+      </div>
+    </div>-->
+    <div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("soya2.jpg"), english_soy_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Soy</h3></div>
+      </div>
+    </div>
+    <!--<div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("ajonjoli1.jpg"), english_sesame_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Sesame</h3></div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("frijol2.jpg"), english_beans_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3>Beans</h3></div>
+      </div>
+    </div>-->
+  </div>
+  <!--<div class="row">
+    <div class="col-sm-2">
+      <div class="thumbnail">
+        <%= link_to image_tag("ricino1.jpg"), english_castor_oil_path, :class=>"img-responsive img-thumbnail" %>
+        <div class="caption"><h3 class="text-left">Castor Oil</h3></div>
+      </div>
+    </div>
+  </div>-->
+</div>

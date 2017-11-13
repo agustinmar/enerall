@@ -1,0 +1,16 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Technology", english_technology_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-7">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <p>Enerall has developed technological packages for different crops in Southeast Mexico; among them stand out the following: castor, yellow and white corn, sorghum, soy, black beans, and sesame.</p>
+    <p>In 2.5 years, our soils have improved their characteristics (profile, texture and organic matter) and the agricultural yields have increased 32% compounded annually.</p>
+    <p>Upon the third cycle, fertilization costs are reduced and the inoculation of microorganisms are omitted. In 2.5 years the costs per hectare have decreased 14% compounded annually.</p>
+  </div>
+  <div class="col-md-5">
+    <%= image_tag "yield_module.jpg", :class=>"img-responsive img-thumbnail" %>
+  </div>
+</div>

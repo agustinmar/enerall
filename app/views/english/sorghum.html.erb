@@ -1,0 +1,75 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Products", english_products_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <ul>
+      <li>Planting in Mexico, 2012:</li>
+      <ul>
+        <li>1.9 million hectares.</li>
+        <li>12.5% of the total surface.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Production, 2012:</li>
+      <ul>
+        <li>7.0 million tons.</li>
+        <li>Annual average 2008-2012: 6.6 million tons.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Imports, 2012:</li>
+      <ul>
+        <li>247,000 tons, equivalent to 3.5% of national production.</li>
+        <li>Annual average 2008-2012: 731,000 tons, equivalent to 11% of the average production of the country.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Imports via Puerto Progreso, Yucatán, 2012:</li>
+      <ul>
+        <li>169,000 tons, 19% of total imports nationwide.</li>
+        <li>Annual average 2008-2012: 254,000 tons, accounting for 35% of total imports.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL achieved sorghum yields of up to 5.5 ton/ha in transformed soils.</li>
+    </ul>
+    <br>
+    <p>Sources: SIAP, SIAVI and Port Authority of Puerto Progreso Yucatan.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "sorgo1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "sorgo2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "sorgo3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "sorgo4.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "sorgo5.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "sorgo6.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

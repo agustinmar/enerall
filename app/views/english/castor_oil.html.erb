@@ -1,0 +1,118 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Products", english_products_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-5">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <p>Versatile high quality oil, extracted from castor beans. Crude castor oil is passed through a filtration and clarification process to achieve the specifications of “First Special Grade” (FSG) castor oil, also known as Grade No.1. This oil has a pale, transparent, viscous yellow color; with an odor similar to other vegetable oils.</p>
+    <p>Among other applications, castor oil is mainly used in the following industries:</p>
+    <ul>
+      <li>Resins and polyols</li>
+      <li>Lubricants</li>
+      <li>Soaps</li>
+      <li>Cosmetics</li>
+      <li>Biofuels</li>
+    </ul><br><br>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "ricino1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "ricino2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "ricino3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <br><br><br>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr class="success">
+            <th class="text-center txtcaption">PARAMETERS</th>
+            <th class="text-center txtcaption">VALUE</th>
+            <th class="text-center txtcaption">UNITs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="warning">
+            <td class="txtcaption">Acetyl Value</td>
+            <td class="txtcaption">140 Min.</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Acid Value</td>
+            <td class="txtcaption">2% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Color</td>
+            <td class="txtcaption">20 Yellow, 2 Red Max.</td>
+            <td class="txtcaption">Lovibond Scale 5 1/4”</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Free Fatty Acid</td>
+            <td class="txtcaption">1% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Hydroxyl Value</td>
+            <td class="txtcaption">160 - 168</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Insoluble Impurities</td>
+            <td class="txtcaption">0.02 Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Iodine Value</td>
+            <td class="txtcaption">82 - 90</td>
+            <td class="txtcaption">cg Yodo/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Moisture and Volatile Matters</td>
+            <td class="txtcaption">0.25% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Refractive Index</td>
+            <td class="txtcaption">1.477 - 1.481</td>
+            <td class="txtcaption">@ 40°C</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Relative Density</td>
+            <td class="txtcaption">0.958 - 0.969</td>
+            <td class="txtcaption">@ 30°C</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Ricinoleic Acid Content</td>
+            <td class="txtcaption">85% Min.</td>
+            <td class="txtcaption">%</td>
+           </tr>
+          <tr class="warning">
+            <td class="txtcaption">Saponification Value</td>
+            <td class="txtcaption">177 - 187</td>
+            <td class="txtcaption">mgKOH/g</td>
+          </tr>
+          <tr class="warning">
+            <td class="txtcaption">Unsaponifiable Matter</td>
+            <td class="txtcaption">1% Max.</td>
+            <td class="txtcaption">%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

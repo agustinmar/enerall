@@ -1,0 +1,84 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="col-md-9">
+  <h1 class="h1-ener" align="center"><%= @title %></h1>
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "fotogaleria1.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Initial conditions</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria2.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Initial conditions</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria3.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Rock shredding</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria4.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Cover crop with microbial inoculation</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria5.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Soils high in organic matter – conservation tillage</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria6.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Before and after</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria7.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Before and after</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria8.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Global pioneers in the mechanization of castor crop</h4>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div> <!-- Carousel -->
+</div>
+<div class="col-md-3">
+    <br><br><br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <p class="panel-title" align="center"><spam class="text-success">Videos</spam></p>
+      </div>
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9 hidden-xs">
+          <iframe width="420" height="315" src="//www.youtube.com/embed/cHblveNpal8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9 hidden-xs">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/nDrM4b2Y5QU" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

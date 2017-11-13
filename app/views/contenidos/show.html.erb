@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @contenido.parent_id %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @contenido.titulo %>
+</p>
+
+<p>
+  <strong>Texto:</strong>
+  <%= @contenido.texto %>
+</p>
+
+<%= link_to 'Edit', edit_contenido_path(@contenido) %> |
+<%= link_to 'Back', contenidos_path %>

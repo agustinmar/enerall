@@ -1,0 +1,52 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Productos", contenidos_productos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <ul>
+      <li>De esta planta, comúnmente conocida a nivel internacional como “castor”, se extrae el aceite de ricino. El aceite y sus derivados son utilizados como materia prima por diversos ramos industriales, entre otros: resinas y polioles, lubricantes, jabones, cosméticos, y biocombustibles.</li><br>
+      <li>ENERALL ha logrado la producción tecnificada de este cultivo, destacando la cosecha mecanizada del mismo, con rendimientos promedio por hectárea significativamente mayores a los reportados por otros países.</li><br>
+      <li>Utilizando semilla híbrida producida en México, ENERALL ha logrado cosechar entre 2.5 y 4.2 ton/ha en diferentes zonas geográficas.</li><br>
+      <li>ENERALL ofrece al mercado industrial aceite de ricino FSG (First Special Grade), también conocido como Aceite de Ricino No. 1, cumpliendo con los estándares internacionales de calidad.</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "higuerilla1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla4.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla5.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla6.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "higuerilla7.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

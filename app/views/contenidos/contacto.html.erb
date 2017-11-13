@@ -1,0 +1,60 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-4">
+    <!--<div class="panel panel-default">-->
+      <div class="panel-heading">
+          <h1 class="h1-ener text-center"><%= @tit %></h1>
+      </div>
+      <div class="panel-body">
+        <%= form_tag("contenidos/contacto", :method=>"post", :class=>"form-inline", :role=>"form") do %>
+          <p><%= text_field_tag "nombre", nil, :size=>30, :autofocus=>true, :required=>"required", :class=>"form-control", :placeholder=>"Nombre y apellidos" %></p>
+          <p><%= email_field_tag "correo", nil, :size=>30, :required=>"required", :class=>"form-control", :placeholder=>"Correo electrónico" %></p>
+          <div class="form-group">
+            <%= text_area_tag "comentario", nil, :cols=>27, :required => "required", :class=>"form-control", :placeholder=>"Comentarios" %>
+          </div>
+          <button type="submit" class="btn btn-success">Enviar</button>
+        <% end %>
+        <% if @comentario %>
+          <p class="text-primary"><strong><%= @comentario[:nombre] %></strong>, gracias por enviar tus comentarios.</p>
+          <div class="comentario">
+            <%= simple_format (@comentario[:consulta]) %>
+          </div>
+        <% end %>
+      </div>
+    <!--</div>-->
+  </div>
+  <div class="col-md-6">
+    <div class="embed-responsive embed-responsive-16by9 hidden-xs">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1860.5982907114983!2d-88.14489034449214!3d21.144573689191734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f522b174ad225d3%3A0xc4a50bbe246f3ffd!2sENERALL+SA+de+CV!5e0!3m2!1ses-419!2smx!4v1510426438944" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <!--<div class="well well-sm">
+      <p class="txtcaption">Río Sena No. 500</br>
+      Colonia del Valle</br>
+      San Pedro, Nuevo León</br>
+      C.P. 66220</br>
+      Tel. +52 (81) 81 73 55 77</p>
+    </div>-->
+    <div class="well well-sm">
+      <p class="txtcaption">
+        Calle 49 No. 326</br>
+        entre 38 y 40</br>
+        Col. Centro</br>
+        Tizimín, Yucatán</br>
+        C.P. 97700</br>
+        Teléfonos:</br>
+        +52 (986) 116 0228</br>
+        +52 (986) 863 6669</br>
+      </p>
+    </div>
+    <div class="well well-sm">
+      <p class="txtcaption">Correo electrónico:<br>
+      <!--<a href="mailto:ventas@enerall.biz" target="_blank">ventas@enerall.biz</a><br>-->
+      <a href="mailto:info@enerall.biz" target="_blank">info@enerall.biz</a></p>
+    </div>
+  </div>
+</div>

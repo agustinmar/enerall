@@ -1,0 +1,18 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Quienes somos", contenidos_quienes_somos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-7">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <p>En 1994 iniciamos la selección de varios cultivos con el objetivo de obtener variedades de especies prometedoras en cuanto a su potencial para producir biocombustibles.</p>
+    <p>En el 2007 se consolidó un agresivo proyecto de mejoramiento genético, investigación y desarrollo del sorgo dulce y la higuerilla por su alto potencial de cumplir con los objetivos estratégicos de la compañía.</p>
+    <p>En el 2008 Enerall estableció centros de investigación en los estados de Sonora, Yucatán, Veracruz y Nayarit con el fin de mejorar continuamente su tecnología de transformación de suelos y seguir avanzando con las mejoras genéticas de los cultivos agrícolas a lo largo del año y utilizando varios ciclos de acuerdo al clima.</p>
+    <p>En el 2011 se inició la transformación de 1,750 hectáreas en Tizimín, Yucatán, sobre suelos ya ocupados por la ganadería y agricultura extensiva, y con suelos degradados.</p>
+    <p>En el 2013 Enerall arranca con la producción de aceite de ricino, proveniente del cultivo de la higuerilla, integrándose verticalmente en la cadena de valor.</p>
+  </div>
+  <div class="col-md-5">
+    <%= image_tag "historia.jpg", :class=>"img-responsive img-thumbnail" %>
+  </div>
+</div>

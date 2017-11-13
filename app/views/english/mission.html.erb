@@ -1,0 +1,14 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "About Us", english_about_us_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+	<div class="col-md-7">
+		<h1 class="h1-ener"><%= @title %></h1>
+		<p>Transform derelict land into fertile land for agriculture, by using proprietary technology and best sustainability practices, to efficiently produce crops with high profitability and integrate into their value chain.</p>
+	</div>
+	<div class="col-md-5">
+		<%= image_tag "ts_cobertera_cielo.jpg", :class=>"img-responsive img-thumbnail" %>
+	</div>
+</div>

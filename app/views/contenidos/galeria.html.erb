@@ -1,0 +1,169 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Tecnología", contenidos_tecnologia_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="col-md-9">
+  <h1 class="h1-ener" align="center"><%= @tit %></h1>
+  <div id="slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "fotogaleria1.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Condiciones iniciales</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria2.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Condiciones iniciales</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria3.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Fracturación de roca</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria4.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Cultivo de corbetera con inoculación microbiana</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria5.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Suelos con alto contenido de materia orgánica - Labranza de conservación</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria6.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Antes y después</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria7.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Antes y después</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria8.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Transformación de suelos</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria9.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Soya Asideros Pivote 24</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria10.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Sorgo Madures de grano</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria11.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Sorgo Madures de grano</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria12.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Santa Cruz Pivote 10</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria13.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Maíz</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria14.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Maíz Riego</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria15.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Granada Pivote G06</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria16.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Granada Pivote G06</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria17.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Sembradora</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria18.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Maíz</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria19.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Cosecha</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria20.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Descarga de grano</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria21.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Fertilización</h4>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag "fotogaleria22.jpg", :class=>"img-responsive img-thumbnail" %>
+        <div class="carousel-caption">
+          <h4>Aplicación del herbicida pre-emergente</h4>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div> <!-- Carousel -->
+</div>
+<div class="col-md-3">
+    <!--<br><br><br>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <p class="panel-title" align="center"><spam class="text-success">Videos</spam></p>
+      </div>
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9 hidden-xs">
+          <iframe width="420" height="315" src="//www.youtube.com/embed/cHblveNpal8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9 hidden-xs">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/nDrM4b2Y5QU" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>-->
+</div>

@@ -1,0 +1,79 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Products", english_products_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <ul>
+      <li>Planting in Mexico, 2012:</li>
+      <ul>
+        <li>7.4 million hectares.</li>
+        <li>47.4% of the total surface.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Production, 2012:</li>
+      <ul>
+        <li>22.1 million tons.</li>
+        <li>Annual average 2008-2012: 21.5 million tons.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Imports, 2012:</li>
+      <ul>
+        <li>9.5 million tons, equivalent to 43% of national production.</li>
+        <li>Annual average 2008-2012: 8.6 million tons: 91% yellow corn and 9% white corn.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Imports via Puerto Progreso, Yucatan:</li>
+      <ul>
+        <li>644,000 tons; 90% yellow corn and 10% white corn.</li>
+        <li>Annual average 2008-2012: 560,000 tons; 73% yellow corn and 27% white corn.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL has been a corn supplier in the state of Yucatan since 2011, achieving yields of up to 8.4 ton/ha in transformed soils.</li>
+    </ul>
+    <br>
+    <p>Sources: SIAP, SIAVI and Port Authority of Puerto Progreso Yucatan.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "maiz1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz4.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz5.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz6.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "maiz7.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

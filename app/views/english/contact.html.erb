@@ -1,0 +1,56 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-4">
+    <div class="panel-heading">
+      <h1 class="h1-ener text-center"><%= @title %></h1>
+    </div>
+    <div class="panel-body">
+      <%= form_tag("english/contact", :method=>"post", :class=>"form-inline", :role=>"form") do %>
+        <p><%= text_field_tag "name", nil, :size=>30, :autofocus=>true, :required=>"required", :class=>"form-control", :placeholder=>"Name and Last name" %></p>
+        <p><%= email_field_tag "email", nil, :size=>30, :required=>"required", :class=>"form-control", :placeholder=>"E-mail address" %></p>
+        <div class="form-group">
+          <%= text_area_tag "comments", nil, :cols=>27, :required => "required", :class=>"form-control", :placeholder=>"Comments" %>
+        </div>
+        <button type="submit" class="btn btn-success">Send</button>
+      <% end %>
+      <% if @comments %>
+        <p class="text-primary"><strong><%= @comments[:name] %></strong>, Thank you for your comments.</p>
+        <div class="comments">
+          <%= simple_format (@comments[:consulta]) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <p></p><div class="embed-responsive embed-responsive-16by9 hidden-xs">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28771.80193734354!2d-100.38321090000001!3d25.65553630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bd907e0e8fad%3A0x1fda298717e7ee3c!2sR%C3%ADo+Sena+500%2C+Del+Valle%2C+66220+NL!5e0!3m2!1ses!2smx!4v1415052598271" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    </div></p>
+    <p></p><div class="embed-responsive embed-responsive-16by9 hidden-xs">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3721.208572870791!2d-88.145225!3d21.144096299999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f522b1768f6e313%3A0x9cc1c3709b4015cc!2s49+325%2C+97700+Tizim%C3%ADn%2C+YUC!5e0!3m2!1ses!2smx!4v1415317729967" width="600" height="450" frameborder="0" style="border:0"></iframe>
+    </div></p>
+  </div>
+  <div class="col-md-2">
+    <div class="well well-sm">
+      <p class="txtcaption">Río Sena No. 500</br>
+      Colonia del Valle</br>
+      San Pedro, Nuevo León</br>
+      C.P. 66220</br>
+      Tel. +52 (81) 81 73 55 77</p>
+    </div>
+    <div class="well well-sm">
+      <p class="txtcaption">C-49 No. 326</br>
+      entre 38 y 40</br>
+      Tizimín, Yucatán</br>
+      C.P. 97700</br>
+      Tel. +52 (986) 863 66 69</p>
+    </div>
+    <div class="well well-sm">
+      <p class="txtcaption">E-mail address:<br>
+      <a href="mailto:ventas@enerall.biz" target="_blank">ventas@enerall.biz</a><br>
+      <a href="mailto:info@enerall.biz" target="_blank">info@enerall.biz</a></p>
+    </div>
+  </div>
+</div>

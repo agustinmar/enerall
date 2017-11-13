@@ -1,0 +1,63 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Tecnología", contenidos_tecnologia_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="container">
+  <h1 class="h1-ener"><%= @tit %></h1>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "ts_mecanico.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Limpieza de potreros abandonados.</li>
+          <li>Movilización tecnificada de rocas calcáreas.</li>
+          <li>Preparación de cama de siembra.</li>
+          <li>Instalación de sistemas de riego.</li>
+          <!--<li>Fracturación, homogenización y desmenuzación de roca.</li>
+          <li>Control de granulometría para evitar pérdida de suelo y favorecer establecimiento de cultivos.</li>-->
+        </ul>
+      </div></p>
+      <!--<%= image_tag "ts_mecanico_foto.jpg", :class=>"img-responsive" %>-->
+    </div>
+  </div>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "ts_orgabiol.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Siembra de cultivos de Cobertura.</li>
+          <li>Resto sacar.</li>
+          <!--<li>Incorporación de comunidades microbianas y sustratos orgánicos en la roca desmenuzada.</li>
+          <li>Comunidades cultivadas son nativas.</li>-->
+        </ul>
+      </div></p>
+      <%= image_tag "ts_orgabiol_foto.jpg", :class=>"img-responsive" %>
+    </div>
+  </div>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "ts_sustentable.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Labranza de conservación:
+          <ul class="txtcaption">
+            <li>El residuo vegetal post cosecha del cultivo se deja sin tocar para que se degrade naturalmente.</li>
+            <li>Mejora la textura y estructura del suelo.</li>
+            <li>Favorece captura de carbono.</li>
+            <li>Controles para evitar contaminación de mantos freáticos por fertilizantes, plaguicidas, etc.</li>
+            <li>Manejo integrado de plagas y enfermedades.</li>
+            <!--<li>Incorpora el residuo vegetal del cultivo.</li>
+            <li>Mejora la textura y estructura del suelo.</li>
+            <li>20-40 ton. de materia orgánica/ha/año.</li>
+            <li>Favorece captura de carbón.</li>-->
+          </ul>
+          <!--<li>Controles para evitar contaminación de mantos freáticos por fertilizantes, plaguicidas, etc.</li>
+          <li>Sistemas de monitoreo y laboratorios así como el uso intensivo de lisímetros.</li>
+          <li>Manejo integrado de plagas y enfermedades mediante control biológico.</li>-->
+        </ul>
+      </div>
+      <%= image_tag "ts_sustentable_foto.jpg", :class=>"img-responsive" %>
+    </div></p>
+  </div>
+</div>

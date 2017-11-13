@@ -1,0 +1,54 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li><%= link_to "Technology", english_technology_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="container">
+  <h1 class="h1-ener"><%= @title %></h1>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "st_mechanic.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Cleaning of abandoned pastures.</li>
+          <li>Rock fracturing, homogenizing, and shredding.</li>
+          <li>Granulometry control to prevent soil loss and favor crop establishment.</li>
+        </ul>
+      </div></p>
+      <%= image_tag "ts_mecanico_foto.jpg", :class=>"img-responsive" %>
+    </div>
+  </div>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "st_orgabiol.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Planting cover crops.</li>
+          <li>Incorporation of microbial communities and organic substrates in the crushed rock.</li>
+          <li>Cultivated communities are native.</li>
+        </ul>
+      </div></p>
+      <%= image_tag "ts_orgabiol_foto.jpg", :class=>"img-responsive" %>
+    </div>
+  </div>
+  <div class="col-sm-4 thumbnails" id="hover-cap-4col">
+    <div class="thumbnail">
+      <%= image_tag "st_sustainable.jpg", :class=>"img-responsive" %>
+      <p><div class="caption2">
+        <ul class="txtcaption">
+          <li>Conservation Tillage:
+          <ul class="txtcaption">
+            <li>Incorporates the vegetable residue of harvested crops.</li>
+            <li>Improves texture and soil structure.</li>
+            <li>20-40 ton. organic matter/ha/year.</li>
+            <li>Favors carbon capture.</li>
+          </ul>
+          <li>Controls to prevent groundwater contamination due to fertilizers, pesticides, etc.</li>
+          <li>Monitoring systems and laboratories, as well as intensive use of lysimeters.</li>
+          <li>Integrated pest and disease management through biological control.</li>
+        </ul>
+      </div>
+      <%= image_tag "ts_sustentable_foto.jpg", :class=>"img-responsive" %>
+    </div></p>
+  </div>
+</div>

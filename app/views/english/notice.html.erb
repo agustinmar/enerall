@@ -1,0 +1,19 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Home", english_index_path %></li>
+  <li class="active"><%= @title %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-7">
+    <h1 class="h1-ener"><%= @title %></h1>
+    <p>Based on Articles 15 and 16 of the Federal Law on Protection of Personal Data Held by Private published in the Official Journal of the Federation on July 5, 2010, we inform you that Enerall SAPI de C.V. with registered offices at No. 500 West Rio Sena, Colonia Del Valle, San Pedro Garza Garcia, Nuevo Leon, CP 66220, is committed to the protection of personal data that you provide us such as: full name, date of birth, federal taxpayer registration, nationality, gender, address, phone number, email address, profession, among others. Also, the economic or financial Sensitive Data we have provided will be treated under security measures provided by law, ensuring confidentiality at all times.</p>
+    <p>Personal data will only be used to provide the services requested and processed for identification, operation, management, procurement, notification of new services, communication about changes in them, preparing studies and programs, conducting regular quality assessments our services in order to improve them and in general, to comply with the obligations we have towards you and who are bound by disposition authority, may be transferred to institutions, third parties service providers were required under services.</p>
+    <p>Enerall S.A.P.I. de C.V. only collects necessary information, in compliance with legal and regulatory requirements in force, so that by this means it informs the purposes for which the information will be used, providing additional information, provided it is we requested. You hereby authorize us to manage and use your personal data in accordance with the above, exclusively for the aforementioned purposes. You may at any time revoke your consent and exercise your rights of access, rectification, cancellation, opposition, dissemination and use limitation, by sending an email to Lic. Katia Aguiar (<%= mail_to "kaguiar@plenus.biz" %>), responsible for our Department of Protection of Personal Data, located on Rio Sena Poniente No. 500, Colonia del Valle, San Pedro Garza Garcia, Nuevo Leon, or, to communicate at (81) 8399-5600 ext. 5382.</p>
+    <p>Any changes to our Privacy Notice will be notified in due time via email or other means of communication, according to the Federal Law on Protection of Personal Data Held by Private Parties, in order to have it always informed.</p>
+    <p>It was tacitly understood that you consent to the processing of personal data as set forth in this privacy notice, when having put at his disposal, does not oppose.</p>
+    <p>Sincerely,</p>
+    <p>Enerall S.A.P.I de C.V.</p>
+  </div>
+  <div class="col-md-5">
+    <%= image_tag "aviso.jpg", :class=>"img-responsive img-thumbnail" %>
+  </div>
+</div>

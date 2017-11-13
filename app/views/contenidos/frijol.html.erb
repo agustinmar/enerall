@@ -1,0 +1,64 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Productos", contenidos_productos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <ul>
+      <li>Superficie sembrada en México, año agrícola 2012</li>
+       <ul>
+        <li>1.7 millones de has.</li>
+        <li>10.9% de la superficie total sembrada.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Producción, año agrícola 2012</li>
+      <ul>
+        <li>1.1 millones de ton.</li>
+        <li>Promedio anual 2008-2012: 991 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Las variedades de frijol “tipo negro” tienen una alta preferencia en la región Sur de México. Se estima que un 67% del consumo nacional de frijol negro se realiza en esta región.</li>
+    </ul>
+    <ul>
+      <li>Producción de frijol negro</li>
+      <ul>
+        <li>Promedio anual 2007-2011, 370 mil ton, un 33% del total de todos las variedades de frijol.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Importaciones de frijol negro, 2012</li>
+      <ul>
+        <li>97 mil ton.</li>
+      </ul>
+    </ul>
+    <ul>
+      <li>ENERALL ha concentrado sus esfuerzos de producción utilizando variedades de frijol negro, obteniendo rendimientos cercanos a las 2.0 ton/ha en suelos transformados.</li>
+    </ul>
+    <br>
+    <p>Fuentes: SIAP, SIAVI y Administración Portuaria de Puerto Progreso, Yucatán.</p>
+  </div>
+  <div class="col-md-6">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag "frijol1.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "frijol2.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+        <div class="item">
+          <%= image_tag "frijol3.jpg", :class=>"img-responsive img-thumbnail" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Quienes somos", contenidos_quienes_somos_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-7">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <p>Ser una empresa líder mundial en el desarrollo y mejoramiento de tierras pedregosas para la eficiente producción de cultivos destinados a la alimentación y a la industria de aceites vegetales.</p>
+  </div>
+  <div class="col-md-5">
+    <%= image_tag "higuerilla2.jpg", :class=>"img-responsive img-thumbnail" %>
+  </div>
+</div>

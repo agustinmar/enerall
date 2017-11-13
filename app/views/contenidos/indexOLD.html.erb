@@ -1,0 +1,31 @@
+<h1 class="text-success">Inicio</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>TITULO</th>
+      <th>CONTENIDO</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contenidos.each do |contenido| %>
+      <tr>
+        <td><%= contenido.id %></td>
+        <td><%= contenido.titulo %></td>
+        <td><%= contenido.texto %></td>
+        <td><%= link_to 'Show', contenido %></td>
+        <td><%= link_to 'Edit', edit_contenido_path(contenido) %></td>
+        <td><%= link_to 'Destroy', contenido, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contenido', new_contenido_path %>
