@@ -1,7 +1,8 @@
 class Contact < ActionMailer::Base
   default from: "info@enerall.biz"
 
-  Contact.recepcion.deliver
+  # Esta linea causa errores en produccion.
+  #Contact.recepcion.deliver
 
   def micorreo(parametros)
   	enviar_correo(parametros,"info@enerall.biz","Nuevo mensaje")
