@@ -65,9 +65,61 @@
 			</div>-->
 		</div>
 		<div class="row">
+			<ul class="nav nav-tabs">
+				<li>
+					<%= link_to "", root_path, :class=>"navbar-brand glyphicon glyphicon-home" %>
+				</li>
+				<li class="dropdown">
+					<%= link_to "Quienes somos", contenidos_quienes_somos_path %>
+					<ul class="dropdown-menu">
+						<li><%= link_to "Historia", contenidos_historia_path %></li>
+						<li><%= link_to "Misión", contenidos_mision_path %></li>
+						<li><%= link_to "Visión", contenidos_vision_path %></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<%= link_to "Tecnología", contenidos_tecnologia_path %>
+					<ul class="dropdown-menu">
+						<li><%= link_to "Transformación de suelos", contenidos_ts_path %></li>
+						<li><%= link_to "Mejora Contínua", contenidos_mejora_continua_path %></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<%= link_to "Productos", contenidos_productos_path %>
+					<ul class="dropdown-menu">
+						<li role="presentation" class="dropdown-header">Agrícolas</li>
+						<li><%= link_to "Maíz", contenidos_maiz_path %></li>
+						<li><%= link_to "Sorgo", contenidos_sorgo_path %></li>
+						<!--<li><%= link_to "Higuerilla", contenidos_higuerilla_path %></li>-->
+						<li><%= link_to "Soya", contenidos_soya_path %></li>
+						<!--<li><%= link_to "Ajonjolí", contenidos_ajonjoli_path %></li>
+						<li><%= link_to "Frijol", contenidos_frijol_path %></li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation" class="dropdown-header">Industriales</li>
+						<li><%= link_to "Aceite de ricino", contenidos_ricino_path %></li>-->
+					</ul>
+				</li>
+				<li>
+					<%= link_to "Galería", contenidos_galeria_path %>
+				</li>
+				<li>
+					<%= link_to "Contacto", contenidos_contacto_path %>
+				</li>
+			</ul>
 			<%= yield %>
 		</div>
-
+		<div class="row">
+			<div class="footer">
+				<div class="container">
+					<div class="col-md-5">
+						<%= link_to "Aviso de Privacidad", contenidos_aviso_path, :class=>"footer" %>
+					</div>
+					<div class="col-md-7">
+						<p class="credit text-left">©Enerall 2017</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>-->
 	</div>
