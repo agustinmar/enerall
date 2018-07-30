@@ -1,0 +1,14 @@
+<ol class="breadcrumb">
+  <li><%= link_to "Inicio", root_path %></li>
+  <li><%= link_to "Tecnología", contenidos_tecnologia_path %></li>
+  <li class="active"><%= @tit %></li>
+</ol>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+    <p>Gracias a la tecnología adquirida, podemos realizar mapas de ambientes con potenciales de rendimiento, con los cuales podemos realizar aplicaciones variables de insumos (semilla y fertilizantes) según la necesidad de cada ambiente y cultivo.</p>
+  </div>
+  <div class="col-md-6">
+    <%= image_tag "agricultura_precision.jpg", :class=>"img-responsive img-thumbnail" %>
+  </div>
+</div>

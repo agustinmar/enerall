@@ -2,57 +2,35 @@
   <li><%= link_to "Inicio", root_path %></li>
   <li class="active"><%= @tit %></li>
 </ol>
-<div class="container text-justify text-success">
-  <h1 class="h1-ener"><%= @tit %></h1>
-  <p>ENERALL ha concentrado sus esfuerzos en la producción y comercialización de cereales y oleaginosas.</p>
-  <p>Gracias al riego por pivote central, se logra una rotación Sorgo (primer cultivo) – Soya – Maiz, logrando sembrar al menos dos cultivos en un año.</p>
-  <p>ENERALL se compromete a lograr la máxima calidad en sus productos de una manera sustentable. Nos enorgullece contribuir al desarrollo del campo Mexicano, a la sustitución de importaciones, y a la seguridad alimentaria nacional a través del abasto de alimentos en el mercado nacional.</p>
-  <!--<p>ENERALL ha concentrado sus esfuerzos en la producción y comercialización de granos y oleaginosas. Un cultivo estratégico para la empresa es la higuerilla, de la cual se extrae aceite de ricino que tiene más de 700 usos registrados por diversas industrias a nivel global.</p>
-  <p>ENERALL se compromete a lograr la máxima calidad en sus productos de una manera sustentable. Nos enorgullece contribuir al desarrollo del campo Mexicano, como también al abasto de alimentos y aceites vegetales en el mercado nacional e internacional.</p>-->
-  <div class="row">
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("maiz6.jpg"), contenidos_maiz_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Maíz</h3></div>
+<div class="text-justify text-success">
+  <div class="col-md-6">
+    <h1 class="h1-ener"><%= @tit %></h1>
+<!--<div class="container text-justify text-success">
+  <h1 class="h1-ener"><%= @tit %></h1>-->
+    <p>ENERALL ha concentrado sus esfuerzos en la producción y comercialización de cereales y oleaginosas.</p>
+    <p>Gracias al riego por pivote central, se logra una rotación Sorgo (primer cultivo) – Soya – Maiz, logrando sembrar al menos dos cultivos en un año.</p>
+    <p>ENERALL se compromete a lograr la máxima calidad en sus productos de una manera sustentable. Nos enorgullece contribuir al desarrollo del campo Mexicano, a la sustitución de importaciones, y a la seguridad alimentaria nacional a través del abasto de alimentos en el mercado nacional.</p><br><br><br><br><br><br><br><br>
+  </div><br><br><br><br>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <%= link_to image_tag("maiz6.jpg"), contenidos_maiz_path, :class=>"img-responsive img-thumbnail" %>
+          <div class="caption"><h3>Maíz</h3></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <%= link_to image_tag("soya1.jpg"), contenidos_soya_path, :class=>"img-responsive img-thumbnail" %>
+          <div class="caption"><h3>Soya</h3></div>
+        </div>
+      </div>    
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <%= link_to image_tag("sorgo6.jpg"), contenidos_sorgo_path, :class=>"img-responsive img-thumbnail" %>
+          <div class="caption"><h3>Sorgo</h3></div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("sorgo6.jpg"), contenidos_sorgo_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Sorgo</h3></div>
-      </div>
-    </div>
-    <!--<div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("higuerilla2.jpg"), contenidos_higuerilla_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Higuerilla</h3></div>
-      </div>
-    </div>-->
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("soya1.jpg"), contenidos_soya_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Soya</h3></div>
-      </div>
-    </div>
-    <!--<div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("ajonjoli1.jpg"), contenidos_ajonjoli_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Ajonjolí</h3></div>
-      </div>
-    </div>-->
-    <!--<div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("frijol2.jpg"), contenidos_frijol_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3>Frijol</h3></div>
-      </div>
-    </div>-->
   </div>
-  <!--<div class="row">
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <%= link_to image_tag("ricino1.jpg"), contenidos_ricino_path, :class=>"img-responsive img-thumbnail" %>
-        <div class="caption"><h3 class="text-left">Aceite de ricino</h3></div>
-      </div>
-    </div>
-  </div>-->
 </div>

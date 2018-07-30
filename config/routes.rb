@@ -10,6 +10,7 @@ Enerall::Application.routes.draw do
   get "contenidos/tecnologia"
   get "contenidos/ts"
   get "contenidos/mejora_continua"
+  get "contenidos/agricultura_precision"
   get "contenidos/galeria"
   get "contenidos/productos"
   get "contenidos/maiz"
